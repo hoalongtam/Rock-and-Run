@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application-keys xmlns="http://www.ebay.com/msif/config">
+    <application-key env="production">
+        <application-id>BayAreaP-8f06-4079-8df5-38d73164f26f</application-id>
+	</application-key>
+</application-keys>       

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service-client-config xmlns="http://www.ebay.com/msif/clientconfig" service-name="ShoppingService">
+    <default-request-data-binding>xml</default-request-data-binding>
+    <default-response-data-binding>xml</default-response-data-binding>
+    <request-pipeline>
+        <handler name="EBayShoppingServiceRequestHeaderHandler">
+            <class-name>EBayShoppingServiceRequestHeaderHandler</class-name>
+        </handler>
+        <handler name="EBayReachabilityHandler">
+            <class-name>EBayReachabilityHandler</class-name>
+        </handler>
+		<!-- enable affiliate tracking -->
+		<handler name="EBayShoppingAffiliateTrackingHandler">
+			<class-name>EBayShoppingAffiliateTrackingHandler</class-name>
+		</handler>
+        <handler name="EBayRequestLoggingHandler">
+            <class-name>EBayRequestLoggingHandler</class-name>
+        </handler>
+    </request-pipeline>
+    <response-pipeline>
+        <handler name="EBayResponseLoggingHandler">
+            <class-name>EBayResponseLoggingHandler</class-name>
+        </handler>
+    </response-pipeline>
+</service-client-config>     

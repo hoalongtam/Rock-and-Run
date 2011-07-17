@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ED1AB8B13D34BE8009F4E1E /* AccData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1AB8A13D34BE8009F4E1E /* AccData.m */; };
+		AC03853313D1972B00848582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC03853213D1972B00848582 /* UIKit.framework */; };
+		AC03853513D1972B00848582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC03853413D1972B00848582 /* Foundation.framework */; };
+		AC03853713D1972B00848582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC03853613D1972B00848582 /* CoreGraphics.framework */; };
+		AC03853D13D1972B00848582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC03853B13D1972B00848582 /* InfoPlist.strings */; };
+		AC03854013D1972B00848582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC03853F13D1972B00848582 /* main.m */; };
+		AC03854313D1972B00848582 /* pacemakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC03854213D1972B00848582 /* pacemakerAppDelegate.m */; };
+		AC03854613D1972B00848582 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC03854413D1972B00848582 /* MainWindow.xib */; };
+		AC03854913D1972B00848582 /* pacemakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC03854813D1972B00848582 /* pacemakerViewController.m */; };
+		AC03854C13D1972B00848582 /* pacemakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC03854A13D1972B00848582 /* pacemakerViewController.xib */; };
+		AC03855313D1974100848582 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC03855213D1974100848582 /* Icon.png */; };
+		AC03855513D1975000848582 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC03855413D1975000848582 /* Default.png */; };
+		AC03855713D1979000848582 /* pacemaker_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = AC03855613D1979000848582 /* pacemaker_bkg.png */; };
+		AC03855913D1979700848582 /* pacemaker_button.png in Resources */ = {isa = PBXBuildFile; fileRef = AC03855813D1979700848582 /* pacemaker_button.png */; };
+		AC03855E13D19AAB00848582 /* pacemaker_title.png in Resources */ = {isa = PBXBuildFile; fileRef = AC03855D13D19AAB00848582 /* pacemaker_title.png */; };
+		AC7D9F7D13D246A1002EE0A8 /* buyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7D9F7B13D246A1002EE0A8 /* buyViewController.m */; };
+		AC7D9F7E13D246A1002EE0A8 /* buyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7D9F7C13D246A1002EE0A8 /* buyViewController.xib */; };
+		AC889E2113D2213200D36A3A /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC889E1F13D2213200D36A3A /* settingsViewController.m */; };
+		AC889E2213D2213200D36A3A /* settingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC889E2013D2213200D36A3A /* settingsViewController.xib */; };
+		AC889E3B13D230D600D36A3A /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC889E3913D230D500D36A3A /* infoViewController.m */; };
+		AC889E3C13D230D600D36A3A /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC889E3A13D230D600D36A3A /* infoViewController.xib */; };
+		ACAF734913D285CE004816E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF734813D285CE004816E2 /* SystemConfiguration.framework */; };
+		ACAF734C13D285DB004816E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF734B13D285DB004816E2 /* Security.framework */; };
+		ACAF734E13D285EC004816E2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF734D13D285EC004816E2 /* libxml2.dylib */; };
+		ACAF735213D28645004816E2 /* ListingDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAF734F13D28645004816E2 /* ListingDetailsView.xib */; };
+		ACAF735313D28645004816E2 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAF735013D28645004816E2 /* ItemTableViewCell.xib */; };
+		ACAF735413D28645004816E2 /* FindItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACAF735113D28645004816E2 /* FindItemsViewController.xib */; };
+		ACAF735813D28686004816E2 /* FindingServiceClientConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACAF735513D28686004816E2 /* FindingServiceClientConfig.xml */; };
+		ACAF735913D28686004816E2 /* ApplicationKeys.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACAF735613D28686004816E2 /* ApplicationKeys.xml */; };
+		ACAF735A13D28686004816E2 /* ShoppingServiceClientConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACAF735713D28686004816E2 /* ShoppingServiceClientConfig.xml */; };
+		ACAF736B13D2874B004816E2 /* ListingDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736013D2874B004816E2 /* ListingDetailsViewController.m */; };
+		ACAF736C13D2874B004816E2 /* PriceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736213D2874B004816E2 /* PriceFormatter.m */; };
+		ACAF736D13D2874B004816E2 /* ProblemLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736413D2874B004816E2 /* ProblemLogger.m */; };
+		ACAF736E13D2874B004816E2 /* TimeLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736613D2874B004816E2 /* TimeLeft.m */; };
+		ACAF736F13D2874B004816E2 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736813D2874B004816E2 /* ImageLoader.m */; };
+		ACAF737013D2874B004816E2 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF736A13D2874B004816E2 /* ItemTableViewCell.m */; };
+		ACAF737313D28755004816E2 /* FindItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAF737213D28755004816E2 /* FindItemsViewController.m */; };
+		ACAF737513D28FE7004816E2 /* eBayiOSMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAF737413D28FE7004816E2 /* eBayiOSMobileSDK.framework */; };
+		ACED160413D2B1BB0072D8A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACED160313D2B1BB0072D8A3 /* AVFoundation.framework */; };
+		ACED160713D2B1C60072D8A3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACED160613D2B1C60072D8A3 /* AudioToolbox.framework */; };
+		ACED160913D2B1D10072D8A3 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACED160813D2B1D10072D8A3 /* MediaPlayer.framework */; };
+		ACED160E13D2B3380072D8A3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACED160B13D2B3380072D8A3 /* MainViewController.m */; };
+		ACED160F13D2B3380072D8A3 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACED160D13D2B3380072D8A3 /* MusicTableViewController.m */; };
+		ACED161113D2B35A0072D8A3 /* no_artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = ACED161013D2B35A0072D8A3 /* no_artwork.png */; };
+		ACED161613D2B3C20072D8A3 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACED161213D2B3C20072D8A3 /* MainView.xib */; };
+		ACED161713D2B3C20072D8A3 /* MusicTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACED161313D2B3C20072D8A3 /* MusicTableView.xib */; };
+		ACED161813D2B3C20072D8A3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACED161413D2B3C20072D8A3 /* Settings.bundle */; };
+		ACED161913D2B3C20072D8A3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACED161513D2B3C20072D8A3 /* Localizable.strings */; };
+		ACED161B13D2B9220072D8A3 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = ACED161A13D2B9220072D8A3 /* sound.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ED1AB8913D34BE8009F4E1E /* AccData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccData.h; sourceTree = SOURCE_ROOT; };
+		4ED1AB8A13D34BE8009F4E1E /* AccData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccData.m; sourceTree = SOURCE_ROOT; };
+		AC03852E13D1972B00848582 /* pacemaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pacemaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC03853213D1972B00848582 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC03853413D1972B00848582 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC03853613D1972B00848582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC03853A13D1972B00848582 /* pacemaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pacemaker-Info.plist"; sourceTree = "<group>"; };
+		AC03853C13D1972B00848582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC03853E13D1972B00848582 /* pacemaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pacemaker-Prefix.pch"; sourceTree = "<group>"; };
+		AC03853F13D1972B00848582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC03854113D1972B00848582 /* pacemakerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pacemakerAppDelegate.h; sourceTree = "<group>"; };
+		AC03854213D1972B00848582 /* pacemakerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pacemakerAppDelegate.m; sourceTree = "<group>"; };
+		AC03854513D1972B00848582 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		AC03854713D1972B00848582 /* pacemakerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pacemakerViewController.h; sourceTree = "<group>"; };
+		AC03854813D1972B00848582 /* pacemakerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pacemakerViewController.m; sourceTree = "<group>"; };
+		AC03854B13D1972B00848582 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/pacemakerViewController.xib; sourceTree = "<group>"; };
+		AC03855213D1974100848582 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AC03855413D1975000848582 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC03855613D1979000848582 /* pacemaker_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacemaker_bkg.png; sourceTree = SOURCE_ROOT; };
+		AC03855813D1979700848582 /* pacemaker_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacemaker_button.png; sourceTree = SOURCE_ROOT; };
+		AC03855D13D19AAB00848582 /* pacemaker_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacemaker_title.png; sourceTree = "<group>"; };
+		AC7D9F7A13D246A1002EE0A8 /* buyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buyViewController.h; sourceTree = "<group>"; };
+		AC7D9F7B13D246A1002EE0A8 /* buyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buyViewController.m; sourceTree = "<group>"; };
+		AC7D9F7C13D246A1002EE0A8 /* buyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buyViewController.xib; sourceTree = "<group>"; };
+		AC889E1E13D2213200D36A3A /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingsViewController.h; sourceTree = "<group>"; };
+		AC889E1F13D2213200D36A3A /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingsViewController.m; sourceTree = "<group>"; };
+		AC889E2013D2213200D36A3A /* settingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = settingsViewController.xib; sourceTree = "<group>"; };
+		AC889E3813D230D500D36A3A /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		AC889E3913D230D500D36A3A /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		AC889E3A13D230D600D36A3A /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
+		ACAF734813D285CE004816E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ACAF734B13D285DB004816E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ACAF734D13D285EC004816E2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		ACAF734F13D28645004816E2 /* ListingDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListingDetailsView.xib; path = pacemaker/ListingDetailsView.xib; sourceTree = "<group>"; };
+		ACAF735013D28645004816E2 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemTableViewCell.xib; path = pacemaker/ItemTableViewCell.xib; sourceTree = "<group>"; };
+		ACAF735113D28645004816E2 /* FindItemsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FindItemsViewController.xib; path = pacemaker/FindItemsViewController.xib; sourceTree = "<group>"; };
+		ACAF735513D28686004816E2 /* FindingServiceClientConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FindingServiceClientConfig.xml; sourceTree = "<group>"; };
+		ACAF735613D28686004816E2 /* ApplicationKeys.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ApplicationKeys.xml; sourceTree = "<group>"; };
+		ACAF735713D28686004816E2 /* ShoppingServiceClientConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ShoppingServiceClientConfig.xml; sourceTree = "<group>"; };
+		ACAF735F13D2874B004816E2 /* ListingDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingDetailsViewController.h; sourceTree = "<group>"; };
+		ACAF736013D2874B004816E2 /* ListingDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingDetailsViewController.m; sourceTree = "<group>"; };
+		ACAF736113D2874B004816E2 /* PriceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceFormatter.h; sourceTree = "<group>"; };
+		ACAF736213D2874B004816E2 /* PriceFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceFormatter.m; sourceTree = "<group>"; };
+		ACAF736313D2874B004816E2 /* ProblemLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemLogger.h; sourceTree = "<group>"; };
+		ACAF736413D2874B004816E2 /* ProblemLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemLogger.m; sourceTree = "<group>"; };
+		ACAF736513D2874B004816E2 /* TimeLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLeft.h; sourceTree = "<group>"; };
+		ACAF736613D2874B004816E2 /* TimeLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLeft.m; sourceTree = "<group>"; };
+		ACAF736713D2874B004816E2 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
+		ACAF736813D2874B004816E2 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
+		ACAF736913D2874B004816E2 /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		ACAF736A13D2874B004816E2 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		ACAF737113D28755004816E2 /* FindItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindItemsViewController.h; sourceTree = "<group>"; };
+		ACAF737213D28755004816E2 /* FindItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindItemsViewController.m; sourceTree = "<group>"; };
+		ACAF737413D28FE7004816E2 /* eBayiOSMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = eBayiOSMobileSDK.framework; sourceTree = "<group>"; };
+		ACED160313D2B1BB0072D8A3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ACED160613D2B1C60072D8A3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ACED160813D2B1D10072D8A3 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		ACED160A13D2B3380072D8A3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		ACED160B13D2B3380072D8A3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		ACED160C13D2B3380072D8A3 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		ACED160D13D2B3380072D8A3 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+		ACED161013D2B35A0072D8A3 /* no_artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_artwork.png; sourceTree = "<group>"; };
+		ACED161213D2B3C20072D8A3 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		ACED161313D2B3C20072D8A3 /* MusicTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableView.xib; sourceTree = "<group>"; };
+		ACED161413D2B3C20072D8A3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		ACED161513D2B3C20072D8A3 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ACED161A13D2B9220072D8A3 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC03852B13D1972B00848582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACED160913D2B1D10072D8A3 /* MediaPlayer.framework in Frameworks */,
+				ACED160713D2B1C60072D8A3 /* AudioToolbox.framework in Frameworks */,
+				ACED160413D2B1BB0072D8A3 /* AVFoundation.framework in Frameworks */,
+				ACAF734E13D285EC004816E2 /* libxml2.dylib in Frameworks */,
+				ACAF734C13D285DB004816E2 /* Security.framework in Frameworks */,
+				ACAF734913D285CE004816E2 /* SystemConfiguration.framework in Frameworks */,
+				AC03853313D1972B00848582 /* UIKit.framework in Frameworks */,
+				AC03853513D1972B00848582 /* Foundation.framework in Frameworks */,
+				AC03853713D1972B00848582 /* CoreGraphics.framework in Frameworks */,
+				ACAF737513D28FE7004816E2 /* eBayiOSMobileSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC03852313D1972B00848582 = {
+			isa = PBXGroup;
+			children = (
+				AC03855413D1975000848582 /* Default.png */,
+				AC03855213D1974100848582 /* Icon.png */,
+				AC03853813D1972B00848582 /* pacemaker */,
+				ACAF735E13D2872F004816E2 /* Classes */,
+				ACAF735C13D286B4004816E2 /* Resources */,
+				AC03853113D1972B00848582 /* Frameworks */,
+				AC03852F13D1972B00848582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC03852F13D1972B00848582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC03852E13D1972B00848582 /* pacemaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC03853113D1972B00848582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF734D13D285EC004816E2 /* libxml2.dylib */,
+				ACED160813D2B1D10072D8A3 /* MediaPlayer.framework */,
+				ACED160613D2B1C60072D8A3 /* AudioToolbox.framework */,
+				ACED160313D2B1BB0072D8A3 /* AVFoundation.framework */,
+				ACAF737413D28FE7004816E2 /* eBayiOSMobileSDK.framework */,
+				ACAF734B13D285DB004816E2 /* Security.framework */,
+				ACAF734813D285CE004816E2 /* SystemConfiguration.framework */,
+				AC03853213D1972B00848582 /* UIKit.framework */,
+				AC03853413D1972B00848582 /* Foundation.framework */,
+				AC03853613D1972B00848582 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC03853813D1972B00848582 /* pacemaker */ = {
+			isa = PBXGroup;
+			children = (
+				4ED1AB8913D34BE8009F4E1E /* AccData.h */,
+				4ED1AB8A13D34BE8009F4E1E /* AccData.m */,
+				AC03854113D1972B00848582 /* pacemakerAppDelegate.h */,
+				AC03854213D1972B00848582 /* pacemakerAppDelegate.m */,
+				AC03854413D1972B00848582 /* MainWindow.xib */,
+				AC03854713D1972B00848582 /* pacemakerViewController.h */,
+				AC03854813D1972B00848582 /* pacemakerViewController.m */,
+				AC03854A13D1972B00848582 /* pacemakerViewController.xib */,
+				AC7D9F7A13D246A1002EE0A8 /* buyViewController.h */,
+				AC7D9F7B13D246A1002EE0A8 /* buyViewController.m */,
+				AC7D9F7C13D246A1002EE0A8 /* buyViewController.xib */,
+				AC889E3813D230D500D36A3A /* infoViewController.h */,
+				AC889E3913D230D500D36A3A /* infoViewController.m */,
+				AC889E3A13D230D600D36A3A /* infoViewController.xib */,
+				AC889E1E13D2213200D36A3A /* settingsViewController.h */,
+				AC889E1F13D2213200D36A3A /* settingsViewController.m */,
+				AC889E2013D2213200D36A3A /* settingsViewController.xib */,
+				ACED160A13D2B3380072D8A3 /* MainViewController.h */,
+				ACED160B13D2B3380072D8A3 /* MainViewController.m */,
+				ACED161213D2B3C20072D8A3 /* MainView.xib */,
+				ACED160C13D2B3380072D8A3 /* MusicTableViewController.h */,
+				ACED160D13D2B3380072D8A3 /* MusicTableViewController.m */,
+				ACED161313D2B3C20072D8A3 /* MusicTableView.xib */,
+				ACED161413D2B3C20072D8A3 /* Settings.bundle */,
+				ACED161513D2B3C20072D8A3 /* Localizable.strings */,
+				AC03853913D1972B00848582 /* Supporting Files */,
+			);
+			path = pacemaker;
+			sourceTree = "<group>";
+		};
+		AC03853913D1972B00848582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC03855A13D197B100848582 /* Images */,
+				AC03853B13D1972B00848582 /* InfoPlist.strings */,
+				AC03853E13D1972B00848582 /* pacemaker-Prefix.pch */,
+				AC03853F13D1972B00848582 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC03855A13D197B100848582 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ACED161013D2B35A0072D8A3 /* no_artwork.png */,
+				AC03855D13D19AAB00848582 /* pacemaker_title.png */,
+				AC03855813D1979700848582 /* pacemaker_button.png */,
+				AC03855613D1979000848582 /* pacemaker_bkg.png */,
+				AC03853A13D1972B00848582 /* pacemaker-Info.plist */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		ACAF735B13D2868A004816E2 /* SDK Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF735513D28686004816E2 /* FindingServiceClientConfig.xml */,
+				ACAF735613D28686004816E2 /* ApplicationKeys.xml */,
+				ACAF735713D28686004816E2 /* ShoppingServiceClientConfig.xml */,
+			);
+			name = "SDK Configurations";
+			path = pacemaker;
+			sourceTree = "<group>";
+		};
+		ACAF735C13D286B4004816E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACED161A13D2B9220072D8A3 /* sound.caf */,
+				ACAF735B13D2868A004816E2 /* SDK Configurations */,
+				ACAF734F13D28645004816E2 /* ListingDetailsView.xib */,
+				ACAF735013D28645004816E2 /* ItemTableViewCell.xib */,
+				ACAF735113D28645004816E2 /* FindItemsViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ACAF735E13D2872F004816E2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF735F13D2874B004816E2 /* ListingDetailsViewController.h */,
+				ACAF736013D2874B004816E2 /* ListingDetailsViewController.m */,
+				ACAF736113D2874B004816E2 /* PriceFormatter.h */,
+				ACAF736213D2874B004816E2 /* PriceFormatter.m */,
+				ACAF736313D2874B004816E2 /* ProblemLogger.h */,
+				ACAF736413D2874B004816E2 /* ProblemLogger.m */,
+				ACAF736513D2874B004816E2 /* TimeLeft.h */,
+				ACAF736613D2874B004816E2 /* TimeLeft.m */,
+				ACAF736713D2874B004816E2 /* ImageLoader.h */,
+				ACAF736813D2874B004816E2 /* ImageLoader.m */,
+				ACAF736913D2874B004816E2 /* ItemTableViewCell.h */,
+				ACAF736A13D2874B004816E2 /* ItemTableViewCell.m */,
+				ACAF737113D28755004816E2 /* FindItemsViewController.h */,
+				ACAF737213D28755004816E2 /* FindItemsViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC03852D13D1972B00848582 /* pacemaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC03854F13D1972B00848582 /* Build configuration list for PBXNativeTarget "pacemaker" */;
+			buildPhases = (
+				AC03852A13D1972B00848582 /* Sources */,
+				AC03852B13D1972B00848582 /* Frameworks */,
+				AC03852C13D1972B00848582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pacemaker;
+			productName = pacemaker;
+			productReference = AC03852E13D1972B00848582 /* pacemaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC03852513D1972B00848582 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AC03852813D1972B00848582 /* Build configuration list for PBXProject "pacemaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC03852313D1972B00848582;
+			productRefGroup = AC03852F13D1972B00848582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC03852D13D1972B00848582 /* pacemaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC03852C13D1972B00848582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC03853D13D1972B00848582 /* InfoPlist.strings in Resources */,
+				AC03854613D1972B00848582 /* MainWindow.xib in Resources */,
+				AC03854C13D1972B00848582 /* pacemakerViewController.xib in Resources */,
+				AC03855313D1974100848582 /* Icon.png in Resources */,
+				AC03855513D1975000848582 /* Default.png in Resources */,
+				AC03855713D1979000848582 /* pacemaker_bkg.png in Resources */,
+				AC03855913D1979700848582 /* pacemaker_button.png in Resources */,
+				AC03855E13D19AAB00848582 /* pacemaker_title.png in Resources */,
+				AC889E2213D2213200D36A3A /* settingsViewController.xib in Resources */,
+				AC889E3C13D230D600D36A3A /* infoViewController.xib in Resources */,
+				AC7D9F7E13D246A1002EE0A8 /* buyViewController.xib in Resources */,
+				ACAF735213D28645004816E2 /* ListingDetailsView.xib in Resources */,
+				ACAF735313D28645004816E2 /* ItemTableViewCell.xib in Resources */,
+				ACAF735413D28645004816E2 /* FindItemsViewController.xib in Resources */,
+				ACAF735813D28686004816E2 /* FindingServiceClientConfig.xml in Resources */,
+				ACAF735913D28686004816E2 /* ApplicationKeys.xml in Resources */,
+				ACAF735A13D28686004816E2 /* ShoppingServiceClientConfig.xml in Resources */,
+				ACED161113D2B35A0072D8A3 /* no_artwork.png in Resources */,
+				ACED161613D2B3C20072D8A3 /* MainView.xib in Resources */,
+				ACED161713D2B3C20072D8A3 /* MusicTableView.xib in Resources */,
+				ACED161813D2B3C20072D8A3 /* Settings.bundle in Resources */,
+				ACED161913D2B3C20072D8A3 /* Localizable.strings in Resources */,
+				ACED161B13D2B9220072D8A3 /* sound.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC03852A13D1972B00848582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC03854013D1972B00848582 /* main.m in Sources */,
+				AC03854313D1972B00848582 /* pacemakerAppDelegate.m in Sources */,
+				AC03854913D1972B00848582 /* pacemakerViewController.m in Sources */,
+				AC889E2113D2213200D36A3A /* settingsViewController.m in Sources */,
+				AC889E3B13D230D600D36A3A /* infoViewController.m in Sources */,
+				AC7D9F7D13D246A1002EE0A8 /* buyViewController.m in Sources */,
+				ACAF736B13D2874B004816E2 /* ListingDetailsViewController.m in Sources */,
+				ACAF736C13D2874B004816E2 /* PriceFormatter.m in Sources */,
+				ACAF736D13D2874B004816E2 /* ProblemLogger.m in Sources */,
+				ACAF736E13D2874B004816E2 /* TimeLeft.m in Sources */,
+				ACAF736F13D2874B004816E2 /* ImageLoader.m in Sources */,
+				ACAF737013D2874B004816E2 /* ItemTableViewCell.m in Sources */,
+				ACAF737313D28755004816E2 /* FindItemsViewController.m in Sources */,
+				ACED160E13D2B3380072D8A3 /* MainViewController.m in Sources */,
+				ACED160F13D2B3380072D8A3 /* MusicTableViewController.m in Sources */,
+				4ED1AB8B13D34BE8009F4E1E /* AccData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC03853B13D1972B00848582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC03853C13D1972B00848582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC03854413D1972B00848582 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC03854513D1972B00848582 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		AC03854A13D1972B00848582 /* pacemakerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC03854B13D1972B00848582 /* en */,
+			);
+			name = pacemakerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC03854D13D1972B00848582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC03854E13D1972B00848582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		AC03855013D1972B00848582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pacemaker/pacemaker-Prefix.pch";
+				INFOPLIST_FILE = "pacemaker/pacemaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC03855113D1972B00848582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pacemaker/pacemaker-Prefix.pch";
+				INFOPLIST_FILE = "pacemaker/pacemaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC03852813D1972B00848582 /* Build configuration list for PBXProject "pacemaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC03854D13D1972B00848582 /* Debug */,
+				AC03854E13D1972B00848582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC03854F13D1972B00848582 /* Build configuration list for PBXNativeTarget "pacemaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC03855013D1972B00848582 /* Debug */,
+				AC03855113D1972B00848582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC03852513D1972B00848582 /* Project object */;
+}
